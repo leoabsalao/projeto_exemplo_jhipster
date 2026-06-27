@@ -1,4 +1,6 @@
 @import 'bootstrap/scss/functions';
+// Prevent Bootswatch from importing Google Fonts
+$web-font-path: null;
 @import 'bootswatch/dist/materia/variables';
 @import 'bootstrap/scss/variables';
 

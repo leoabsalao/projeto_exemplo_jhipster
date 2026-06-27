@@ -1,0 +1,4 @@
+# Main orchestration file - references separate compose files
+include:
+  - src/main/docker/postgresql.yml
+  - src/main/docker/services.yml

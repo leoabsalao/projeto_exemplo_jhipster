@@ -4,11 +4,13 @@
 put Sass variables here:
 eg $input-color: red;
 ****************************/
-@import 'bootswatch/dist/materia/variables';
+$web-font-path: null;
+@import 'bootswatch/dist/materia/_variables';
 // Override Bootstrap variables
 @import 'bootstrap-variables';
 // Import Bootstrap source files from node_modules
 @import 'bootstrap/scss/bootstrap';
-@import 'bootswatch/dist/materia/bootswatch';
+// Use the precompiled Bootswatch theme CSS to avoid Angular Sass URL rebasing issues
+@import 'bootswatch/dist/materia/bootstrap.css';
 
 /* jhipster-needle-scss-add-vendor JHipster will add new css style */

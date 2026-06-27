@@ -1,7 +1,7 @@
 # This configuration is intended for development purpose, it's **your** responsibility to harden it for production
 name: app
 services:
-  postgresql:
+  postgres:
     extends:
-      file: ./postgresql.yml
-      service: postgresql
+      file: postgresql.yml
+      service: postgres
