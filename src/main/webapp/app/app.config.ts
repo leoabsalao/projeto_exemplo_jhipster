@@ -1,6 +1,7 @@
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { ApplicationConfig, LOCALE_ID, importProvidersFrom, inject } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   NavigationError,
   Router,
@@ -50,6 +51,7 @@ if (environment.DEBUG_INFO_ENABLED) {
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes, ...routerFeatures),
+    importProvidersFrom(BrowserAnimationsModule),
     // Set this to true to enable service worker (PWA)
     provideServiceWorker('ngsw-worker.js', { enabled: false }),
     importProvidersFrom(TranslationModule),

@@ -13,4 +13,11 @@ $web-font-path: null;
 // Use the precompiled Bootswatch theme CSS to avoid Angular Sass URL rebasing issues
 @import 'bootswatch/dist/materia/bootstrap.css';
 
+// PrimeNG styles
+@import 'primeicons/primeicons.css';
+
+// Tailwind CSS utilities (no reset to preserve Bootstrap styles)
+@tailwind components;
+@tailwind utilities;
+
 /* jhipster-needle-scss-add-vendor JHipster will add new css style */
